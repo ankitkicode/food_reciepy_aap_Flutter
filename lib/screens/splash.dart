@@ -16,7 +16,7 @@ class _splashScreenState extends State<splashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 4), () {
+    Timer(Duration(seconds: 8), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => MyHome()));
     });
@@ -26,14 +26,23 @@ class _splashScreenState extends State<splashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color.fromRGBO(238, 236, 231, 1),
+        color: Color.fromRGBO(255, 255, 255, 1),
         child: Center(
           child: Container(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("data"),
-                Text("data"),
+                Image.network("https://i.pinimg.com/564x/e4/6b/e6/e46be6459dc4d30cc535b68331d8b6e7.jpg"),
+                // // Center(
+                //   child: Container(
+                //     alignment: Alignment.center,
+                //     child: Text("welcome to recipy\n world",style: TextStyle(
+                //       fontSize: 30,color: Colors.black,
+                //       fontFamily:"monument",
+                      
+                //     ),),
+                //   ),
+                // ),
         
                 
               ],
